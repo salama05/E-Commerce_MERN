@@ -116,7 +116,6 @@ export const updateItemInCart = async ({
   cart.totalAmount = total;
 
   const updatedCart = await cart.save();
-
   return {
     data: updatedCart,
     statusCode: 200,

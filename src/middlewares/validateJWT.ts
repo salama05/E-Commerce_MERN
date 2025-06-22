@@ -39,4 +39,5 @@ const validateJWT = (req: ExtendRequest, res: Response, next: NextFunction) => {
     }
   );
 };
+
 export default validateJWT;

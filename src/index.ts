@@ -16,7 +16,6 @@ mongoose
   .catch((err) => console.log("Failed to connect!", err));
 
 // Seed the products to database
-
 seedInitialProducts();
 
 app.use("/user", userRoute);
