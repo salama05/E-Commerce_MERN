@@ -15,7 +15,6 @@ export interface ICart extends Document {
   totalAmount: number;
   status: "active" | "completed";
 }
-
 const cartItemSchema = new Schema<ICartItem>({
   product: { type: Schema.Types.ObjectId, ref: "product", required: true },
   quantity: { type: Number, required: true, default: 1 },

@@ -105,7 +105,6 @@ export const updateItemInCart = async ({
     (p) => p.product.toString() !== productId
   );
   console.log(otherCartItems);
-
   let total = otherCartItems.reduce((sum, product) => {
     sum += product.quantity * product.unitPrice;
     return sum;

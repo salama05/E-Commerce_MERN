@@ -10,7 +10,6 @@ const validateJWT = (req: ExtendRequest, res: Response, next: NextFunction) => {
     res.status(403).send("Authorization header was not provided");
     return;
   }
-
   const token = authorizationHeader.split("")[1];
   if (!token) {
     res.status(403).send("bearer token not found");
@@ -40,5 +39,4 @@ const validateJWT = (req: ExtendRequest, res: Response, next: NextFunction) => {
     }
   );
 };
-
 export default validateJWT;
